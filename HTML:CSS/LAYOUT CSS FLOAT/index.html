@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="css float">
+    <meta name="author" content="Arthur">
+    <title>CSS Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #3434 ;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        nav {
+            width: 100%;
+            background-color:  #6969;
+            padding: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .search{
+            float: right;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        .div1{
+            width: 25%;
+            background-color:  #9898;
+            text-align: center;
+        }
+        .div2{
+            width: 50%;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .div3{
+            width: 25%;
+            background-color: bisque;
+            text-align: center;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            background-color: cadetblue;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="">
+       <img src="https://img.freepik.com/fotos-gratis/uma-imagem-de-um-planeta-com-um-buraco-negro-no-centro-e-um-buraco-negro-no-centro_1340-23795.jpg" alt="space">
+        <h1>This is a heading.</h1>
+    </header>
+    <section class="sec1">
+        <nav class="navbar">
+            <a>Home</a>
+            <a>About</a>
+            <a>Services</a>
+            <div class="search">Search</div>
+        </nav>
+    </section>
+    <section class="main">
+        <div class="div1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cum aspernatur voluptatem, hic officia
+                similique ipsa, repudiandae rerum accusamus .</p>
+        </div>
+        <div class="div2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cum aspernatur voluptatem, hic officia
+                similique ipsa, repudiandae rerum accusamus .</p>
+        </div>
+        <div class="div3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cum aspernatur voluptatem, hic officia
+                similique ipsa, repudiandae rerum accusamus .</p>
+        </div>
+    </section>
+    <footer> &copy; 2023 by Arthur</footer>
+</body>
+
+</html>
