@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="positions">
+    <meta name="author" content="Arthur">
+    <title>Position</title>
+    <style>
+        .cabeçalho{
+            margin: 0 auto;
+        }
+        h2{
+            width: 50%;
+            background-color: aqua;
+            text-align: center;
+            margin: inherit;
+        }
+        .coment{
+            padding: 20px;
+            margin: inherit;
+            text-align: center;
+        }
+        .container{
+            
+            width: 100%;
+            height: auto;  
+        }
+        .tl{
+            position: absolute;
+            left: 16px;
+            font-size: 18px; 
+        }
+        .tr{
+            position:absolute;
+            
+            right: 16px;
+            font-size: 18px;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 28px;
+        }
+        .bl{
+            position: absolute;
+            bottom:  8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .br{
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        img{
+            z-index: -1;
+            width:100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cabeçalho">
+    <h2>Exercise untity 9 - Positions</h2>
+    <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est libero</p>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="tl"><p class="">top left</p></div>
+        <div class="tr"><p class="">top right</p></div>
+        <div class="center"><p>center</p></div>
+        <div class="bl"><p>bottom left</p></div>
+        <div class="br"><p>bottom right</p></div>
+        <img src="pawel-czerwinski-YlXdoyiYYW8-unsplash.jpg" alt="">
+    </div>
+</body>
+
+</html>

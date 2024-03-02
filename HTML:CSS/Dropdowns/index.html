@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>dropdowns elements</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="dropdown elements">
+    <meta name="author" content="Arthur">
+
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><i>Hoverable Dropdown</i></h2>
+
+    <p>se passar o mouse no texto abaixo, irá surgir uma caixa dropdown com o texto "Olá Mundo!".</p>
+
+    <div class="dropdown">
+        <span>Passe o mouse por cima de mim...</span>
+        <div class="dropdown-content">
+            <p>Olá Mundo!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

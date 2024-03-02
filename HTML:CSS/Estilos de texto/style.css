@@ -1,0 +1,52 @@
+
+
+.title1 {
+    background-color: #db2c63;
+    color: white;
+    text-align: center;
+}
+
+.title2 {
+    text-align: left;
+    font-family: Verdana;
+    font-size: 30px;
+    color: #3950a3;
+}
+
+hr {
+    width: 50%;
+    text-align: center;
+}
+
+#paragrafo_1 {
+    font-size: 2em;
+    letter-spacing: 3px; /*espaço entre as letras*/
+}
+#paragrafo_2{
+    font: italic;
+    text-align: right;
+    font-size: 4em;
+    word-spacing: 40px; /*espaço entre as palavras*/
+}
+#paragrafo_3{
+    text-indent: 50px; /*identaçao do texto*/
+}
+#frase_rasurada{
+    text-decoration: line-through;
+}
+#frase_bold{
+    font-weight: bold;
+}
+#texto_uppercase{
+    background-color: yellow;
+    text-transform: uppercase; /*letras maiusculas*/
+}
+#texto_lowercase{
+    text-transform: lowercase;  /*letras minusculas*/
+    color: #7a39a3;
+}
+#texto_capitalize{
+    text-transform: capitalize;   /*primeira letra da frase em maiúscula e todas minúsculas*/
+    font-family: arial;
+    font-size: 24px;
+}
