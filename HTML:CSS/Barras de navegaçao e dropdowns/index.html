@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur">
+    <title>Nav and dropdowns</title>
+    <style>
+        body {
+            font: 400 15/24 serif;
+            box-sizing: border-box;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #3434;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            padding: 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;/* Set the dropdown menu's width */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: #343434;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        li:hover>a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <div class="dropdown">
+                <a href="#services" class="dropbtn">Services ▼</a>
+                <div class="dropdown-content">
+                    <p>W3C</p>
+                    <p>Master D</p>
+                </div>
+            </div>
+            <li><a href="#contact">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
