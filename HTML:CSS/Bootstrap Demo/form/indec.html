@@ -16,18 +16,18 @@
                 <label for="inputPassword" class="form-label">Password:</label>
             </div>
             <div class="col-auto">
-                <input type="text" id="inputPassword" class="form-control" disabled>
+                <input type="text" id="inputPassword" class="form-control">
             </div>
             <!--Input with text large use the class .form-control-lg. If you want a small text, then use the class .form-control-sm --->
             <div class="col-auto">
-                <input type="text" id="inputPassword" class="form-control-lg" disabled>
+                <input type="text" id="inputPassword" class="form-control-lg">
             </div>
             <div class="form-text col-auto" id="descriptionPassword">description password</div>
         </div>
     </div>
     <br>
     <!--Form inative: we can use <fieldset disable> or we can only take "disabled" attribute on input -->
-    <div class="container-fluid">
+    <div class="container-fluid p-4" style="background-color: cornflowerblue;">
         <form>
             <fieldset disabled>
                 <legend>Form desactivated</legend>
@@ -52,6 +52,34 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
         </form>
+    </div>
+    <br>
+    <!--Form select-->
+    <div class="container-fluid p-4" style="background-color: darkseagreen;">
+        <select name="select" id="selectTest" class="form-select">
+            <option selected>Abra o menu e selecione a sua opção</option>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+    </div>
+    <br>
+    <!--Form Checkbox-->
+    <div class="container p-4" style="background-color: darkcyan;">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Radio default</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="flexRadioDefault2" checked>
+            <label for="flexCheckChecked" class="form-check-label">Radio checked</label>
+        </div>
+    </div>
+    <br>
+    <!--Form Range-->
+    <div class="container p-4" style="background-color: chocolate;">
+        <label for="rangeInput" class="form-label">Range input:</label>
+        <input type="range" class="form-range" min="0" max="10" id="rangeInput">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
