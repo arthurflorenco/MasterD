@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Preenchimento</title>
+</head>
+<body>
+    <div>
+        <input id="myInput" type="text">
+        <br>
+        <button type="button" id="myBtn">Enviar</button>
+    </div>
+    <script>
+        var inputText = document.getElementById("myInput");
+        var btn = document.getElementById("myBtn");
+        
+        btn.addEventListener("click", () => {
+            if (inputText.value == ""){
+                alert("Por favor preencha o campo!");
+            }})
+            
+        
+    </script>
+</body>
+</html>

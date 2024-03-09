@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <textarea id="areaText" cols="30" rows="10"></textarea><br>
+        <button id="myBtn">Enviar texto</button>
+        <button id="myBtn2">Mostrar texto</button>
+    </div>
+    <script>
+        const areaText = document.getElementById('areaText');
+        const myBtn = document.getElementById('myBtn');
+        const myBtn2 = document.getElementById('myBtn2');
+
+        var text = ['texto', 'qualquer'];
+        //enviar o texto digitado no input para a array de textos
+
+        myBtn.addEventListener( "click", () => {
+            areaText.textContent = text;
+        }) 
+
+        //mostrar texto no alert
+        myBtn2.addEventListener('click', () => {
+            alert(areaText.value);
+        })
+        
+        
+    </script>
+</body>
+</html>
