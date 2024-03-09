@@ -8,46 +8,38 @@
 </head>
 
 <body>
-    <div>
-        <label for="numberOne">Numero 1:</label>
-        <input type="number" id="numberOne" required>
-        <label for="numberTwo">Numero 2:</label>
-        <input type="number" id="numberTwo" required><br><br>
 
-        <button id="plusBtn">+</button>
-        <button id="minusBtn">-</button>
-        <button id="timesBtn">*</button>
-        <button id="divideBtn">/</button><br><br>
-        <hr><br>
+    Número 1: <input type="number" id='num1'>
+    Número 2: <input type="number" id='num2'> <br> <br>
+    <button onclick="rFinal('1')">+</button>
+    <button onclick="rFinal('2')">-</button>
+    <button onclick="rFinal('3')">*</button>
+    <button onclick="rFinal('4')">/</button><br><br>
+    Resultado: <input type="number" id='resultado' disabled="">
 
-        <label for="result">Resultado: </label>
-        <input type="number" name="" id="result" disabled>
-    </div>
     <script>
-        const numberOne = document.getElementById('numberOne');
-        const numberTwo = document.getElementById('numberTwo');
-        const result = document.getElementById('result');
-        const plusBtn = document.getElementById('plusBtn');
-        const minusBtn = document.getElementById('minusBtn');
-        const timesBtn = document.getElementById('timesBtn');
-        const divideBtn = document.getElementById('divideBtn');
-
-        var numberOneValue = Number(numberOne.value);
-        var numberTwoValue = Number(numberTwo.value);
-
-        plusBtn.addEventListener('click', () => {
-            result.innerText = `${numberOneValue + numberTwoValue}`;
-        })
-        minusBtn.addEventListener('click', () => {
-            result.innerText = `${numberOneValue - numberTwoValue}`;
-        })
-        timesBtn.addEventListener('click', () => {
-            result.innerText = `${numberOneValue * numberTwoValue}`;
-        })
-        divideBtn.addEventListener('click', () =>{
-            result.innerText = `${numberOneValue / numberTwoValue}`;
-        })
+        function rFinal(c) {
+            var n1 = Number(document.getElementById('num1').value);
+            var n2 = Number(document.getElementById('num2').value);
+            var r;
+            switch (c) {
+                case '1':
+                    r = n1 + n2;
+                    break;
+                case '2':
+                    r = n1 - n2;
+                    break;
+                case '3':
+                    r = n1 * n2;
+                    break;
+                case '4':
+                    r = n1 / n2;
+                    break;
+            }
+            document.getElementById('resultado').value = r;
+        }
     </script>
+
 </body>
 
 </html>
