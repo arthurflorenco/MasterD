@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de somas</title>
+</head>
+
+<body>
+    <div>
+        <label for="inputNumberOne">Insira o primeiro numero:</label>
+        <input class="inputNumberOne" id="inputNumber1" type="number"><br><br>
+        <label for="inputNumberTwo">Insira o segundo numero:</label>
+        <input class="inputNumberTwo" id="inputNumber2" type="number"><br><br>
+        <button id="myBtn">Calcular a soma</button><br><hr>
+        <label for="result">O resultado foi:</label>
+        <output id="result"></output>
+    </div>
+    <script>
+        const inputNum1 = document.getElementById('inputNumber1');
+        const inputNum2 = document.getElementById('inputNumber2');
+        const result = document.getElementById('result');
+        const myBtn = document.getElementById("myBtn");
+
+        myBtn.addEventListener('click', () => {
+
+            let num1 = Number(inputNum1.value);
+            let num2 = Number(inputNum2.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Insira um numero")
+            }
+
+            result.innerText = `${num1} + ${num2} = ${num1 + num2}`;
+        });
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
