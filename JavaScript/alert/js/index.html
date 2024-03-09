@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Alert</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+
+        }
+        button{
+            margin: 20px auto;
+            width: 30%;
+            padding: 50px;
+        }
+        #myBtn{
+            background-color: cadetblue;
+        }
+        #myBtn2 {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myBtn">Blue</button>
+    <button id="myBtn2">Yellow</button>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function () {
+            alert("This button is blue");
+        });
+        document.getElementById("myBtn2").addEventListener("click", function () {
+            alert("This button is yellow");
+        });
+    </script>
+</body>
+
+</html>
