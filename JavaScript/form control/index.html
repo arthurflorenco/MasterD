@@ -21,7 +21,11 @@
         <input type="password" id="password" name="password" required>
         <p id="passwordError" style="color: red;"></p>
 
-        <button type="submit">Registar</button>
+        <label for="checkboxInput">Voce quer que seus dados sejam protegidos?</label>
+        <input type="checkbox" name="checkboxInput" id="checkboxInput">
+        <p id="checkboxError" style="color: red;"></p>
+
+        <button type="submit" id="myBtn">Registar</button>
     </form>
 
     <script>
@@ -32,8 +36,10 @@
         const usernameError = document.getElementById('usernameError');
         const emailError = document.getElementById('emailError');
         const passwordError = document.getElementById('passwordError');
+        const checkboxError = document.getElementById('checkboxError');
 
         const registrationForm = document.getElementById('registrationForm');
+        const myBtn = document.getElementById('myBtn');
 
         registrationForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -41,6 +47,7 @@
             let username = document.getElementById('username').value;
             let email = document.getElementById('email').value;
             let password = document.getElementById('password').value;
+            let checkboxInput = document.getElementById('checkboxInput').value;
 
             if (!usernameRegex.test(username)) {
                 usernameError.innerHTML = "Adicione um usarname compativel";
@@ -51,6 +58,9 @@
             if (!passwordRegex.test(password)) {
                 passwordError.innerHTML = "Password ivalida"
             }
+
+        
+
             //Se todos os campos estao corretos
             console.log('sucess')
         });
