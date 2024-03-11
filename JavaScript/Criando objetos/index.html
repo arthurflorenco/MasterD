@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="aluguer()">Alugar</button>
+    <button onclick="devolver()">Devolver</button>
+    <button onclick="tracking()">Quem alugou?</button>
+    <script>
+        var filme = {
+            titulo: "Senhor dos Aneis",
+            ano: 2002,
+            duraçao: "0 hora",
+            "preço do aluguer": 0,
+            alugado: "nao",
+            "ultimo cliente": "",
+        }
+
+        const aluguer = () => {
+            filme.alugado = "Sim";
+            filme.ultimo_cliente = "Joao";
+            console.log(`filme alugado? ${filme.alugado}. Quem alugou foi o: ${filme.ultimo_cliente}`);
+        }
+        const devolver = () => {
+            filme.alugado = "Não";
+            console.log(filme.alugado)
+        }
+        const  tracking = () => {
+            if (filme.alugado === "Sim") {
+                    return console.log(`O ${filme.titulo} está sendo controlado pelo(a) ${filme.ultimo_cliente}`);
+                }
+                
+                return console.log('O Filme não está em uso no momento!');
+                
+        }
+    </script>
+</body>
+
+</html>
