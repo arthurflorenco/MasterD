@@ -40,33 +40,33 @@
     <input type="text" id="texto" value="insira aqui um texto">
     <button type="button" id="inserir">Inserir</button>
     <script>
-        $("#ocultar").click(function () {       // esconder a div
+        $("#ocultar").click(() => {       // esconder a div
             $("#caixa").hide();
         })
-        $("#mostrar").click(function () {   // mostrar a div
+        $("#mostrar").click(() => {   // mostrar a div
             $("#caixa").show();
         })
-        $("#desvanecer").click(function () {    // desvanecer a div
+        $("#desvanecer").click(() => {    // desvanecer a div
             $("#caixa").fadeOut('slow');
         })
-        $("#aparecer").click(function () {      // aparecer a div
+        $("#aparecer").click(() => {      // aparecer a div
             $("#caixa").fadeIn('slow');
         })
-        $("#negrito").click(function () {       // meter a negrito
+        $("#negrito").click(() => {       // meter a negrito
             $("#caixa").css('font-weight', 'bold');
         })
-        $("#encolher").click(function () {      // encolher a div
+        $("#encolher").click(() => {      // encolher a div
             $("#caixa").removeClass('caixa');
             $("#caixa").addClass('encolhido');
         })
-        $("#tamanhoIn").click(function () {     // voltar ao tamanho original
+        $("#tamanhoIn").click(() => {     // voltar ao tamanho original
             $("#caixa").removeClass('encolhido');
             $("#caixa").addClass('caixa');
         })
-        $("#remNegrito").click(function () {    // tirar o negrito
+        $("#remNegrito").click(() => {    // tirar o negrito
             $("#caixa").css('font-weight', '');
         })
-        $("#inserir").click(function () {       // adicionar texto
+        $("#inserir").click(() => {       // adicionar texto
             var adTexto = $("#texto").val();
             $("#caixa").html(adTexto);
         })
