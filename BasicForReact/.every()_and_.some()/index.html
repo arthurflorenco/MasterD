@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <div id="div1">
+
+    </div>
+    <script>
+        //Every
+
+        const array = [1, 2, 3, 4, 5];
+
+        const allIsNumber = array.every(item => {return item => typeof item === 'number'})//o metodo .every() retorna apenas se todos os intens satisfazem  a condicao do callback (se forem, true)
+
+        document.getElementById('div').innerText = JSON.stringify(allIsNumber); // return => true – porque todos os itens da array sao numeros
+
+        // Some
+        const novoArray = [1, 2, 3, 4, 'test'];
+
+        const notAllIsNumber = novoArray.some(item => {return typeof item !== "number"}); //retorna true mesmo se apenas 1 satisfaz as condiçoes dele
+
+        document.getElementById('div1').textContent = JSON.stringify(notAllIsNumber);// return => true
+
+
+    </script>
+</body>
+</html>

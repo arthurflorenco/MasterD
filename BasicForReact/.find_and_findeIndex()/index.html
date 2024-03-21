@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+        const div1 = document.getElementById("div1");
+        const div2 = document.getElementById("div2");
+        
+        const array = [1, 2, 3, 4, 5];
+
+        const testFind = array.find(item => item % 2 === 0); //o metodo find() retorna o primeiro elemento que ele encontra apenas
+
+        const testFindIndex = array.findIndex(item => item % 2 === 0); // o metodo findIndex() retorna apenas o indice do elemento
+
+        div1.innerText = testFind;
+        div2.innerText = testFindIndex;
+    </script>
+</body>
+
+</html>
